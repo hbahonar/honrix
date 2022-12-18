@@ -4,7 +4,7 @@ require_once get_template_directory() . '/inc/honrix_enqueue.php';
 require_once get_template_directory() . '/inc/honrix_widget_area.php';
 require_once get_template_directory() . '/inc/template-functions.php';
 require_once get_template_directory() . '/inc/template-tags.php';
-require_once get_template_directory() . '/inc/framework/bootstrap/honrix_bootstrap.php';
+// require_once get_template_directory() . '/inc/framework/bootstrap/honrix_bootstrap.php';
 require_once get_template_directory() . '/inc/customize/init.php';
 if (class_exists('WooCommerce')) {
     // require_once get_template_directory() . '/inc/honrix-woocommerce.php';

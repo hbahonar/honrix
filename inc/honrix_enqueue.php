@@ -19,6 +19,7 @@ if (!function_exists('honrix_enqueue_scripts')) {
         /* javascript */
         // wp_enqueue_script('jquery-masonry');
         // wp_enqueue_script('honrix-plugins', esc_url(get_template_directory_uri() . '/assets/js/plugins.js'), array('jquery'), '1.0.0', true);
+        // wp_enqueue_script('tailwind', esc_url(get_template_directory_uri() . '/assets/js/tailwind.js'), array(), '1.0.0', true);
 
         wp_enqueue_script('honrix-main-script', esc_url(get_template_directory_uri() . '/assets/js/custom.js'), defined('ELEMENTOR_PLUGIN_BASE') ? array('jquery', 'elementor-frontend') : array('jquery'), '1.0.0', true);
         // wp_enqueue_script('swiper-script', esc_url(get_template_directory_uri() . '/assets/js/swiper-bundle.min.js'), array('honrix-main-script'), '1.0.0', true);

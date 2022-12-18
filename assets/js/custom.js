@@ -1,6 +1,6 @@
 jQuery(window).load(function () {
-  jQuery(".honrix-loading-page").hide();
-});
+  jQuery('.honrix-loading-page').hide()
+})
 
 jQuery(document).ready(function () {
   // jQuery(".honrix-masonry").masonry();
@@ -57,11 +57,11 @@ jQuery(document).ready(function () {
   }
 
   if (window.innerWidth > 767) {
-    jQuery(".honrix-inner-header .honrix-cart > a").on("click", function (e) {
-      e.preventDefault();
-      var cart = document.querySelector(".honrix-mini-cart-details");
-      cart.classList.add("honrix-mini-cart-details-display");
-    });
+    jQuery('.honrix-inner-header .honrix-cart > a').on('click', function (e) {
+      e.preventDefault()
+      var cart = document.querySelector('.honrix-mini-cart-details')
+      cart.classList.add('honrix-mini-cart-details-display')
+    })
 
     // jQuery(".honrix-mini-cart-details .close").on("click", function(e) {
     //     // alert(e.key);
@@ -69,121 +69,121 @@ jQuery(document).ready(function () {
     //     cart.classList.remove("honrix-mini-cart-details-display");
     // });
 
-    jQuery(".honrix-mini-cart-details .close").keyup(function (e) {
+    jQuery('.honrix-mini-cart-details .close').keyup(function (e) {
       // alert(e.key);
-      if (e.key === "Enter" || e.keyCode === 13) {
-        var cart = document.querySelector(".honrix-mini-cart-details");
-        cart.classList.remove("honrix-mini-cart-details-display");
+      if (e.key === 'Enter' || e.keyCode === 13) {
+        var cart = document.querySelector('.honrix-mini-cart-details')
+        cart.classList.remove('honrix-mini-cart-details-display')
       }
-    });
+    })
 
-    window.addEventListener("scroll", function (ev) {
-      var header = document.querySelector(".honrix-header");
-      var sticky_header = document.querySelector(".honrix-sticky-header");
+    window.addEventListener('scroll', function (ev) {
+      var header = document.querySelector('.honrix-header')
+      var sticky_header = document.querySelector('.honrix-sticky-header')
       if (header && sticky_header) {
         if (window.scrollY >= header.offsetHeight) {
-          sticky_header.classList.add("honrix-sticky-header-show");
+          sticky_header.classList.add('honrix-sticky-header-show')
         } else {
-          sticky_header.classList.remove("honrix-sticky-header-show");
+          sticky_header.classList.remove('honrix-sticky-header-show')
         }
       }
-    });
+    })
 
-    var sticky_header = document.querySelector(".honrix-sticky-header");
-    jQuery(".honrix-content .sidebar, .honrix-entries").attr(
-      "style",
-      "--offset:" + (sticky_header.offsetHeight + 15) + "px"
-    );
+    var sticky_header = document.querySelector('.honrix-sticky-header')
+    jQuery('.honrix-content .sidebar, .honrix-entries').attr(
+      'style',
+      '--offset:' + (sticky_header.offsetHeight + 15) + 'px',
+    )
   }
-});
+})
 
 function close_mini_cart() {
-  var cart = document.querySelector(".honrix-mini-cart-details");
-  cart.classList.remove("honrix-mini-cart-details-display");
+  var cart = document.querySelector('.honrix-mini-cart-details')
+  cart.classList.remove('honrix-mini-cart-details-display')
 }
 
 /* search box */
-// var search_buttons = document.querySelectorAll(
-//     ".honrix-inner-header .honrix-search-button"
-// );
-// search_buttons.forEach(function(button) {
-//     button.addEventListener("click", function() {
-//         var search_box = document.querySelector(".honrix-search-box");
-//         search_box.classList.add("search-box-dispaly");
-//     });
-//     button.addEventListener("keyup", function(e) {
-//         if (e.key === "Enter" || e.keyCode === 13) {
-//             var search_box = document.querySelector(".honrix-search-box");
-//             search_box.classList.add("search-box-dispaly");
-//         }
-//     });
-// });
+var search_buttons = document.querySelectorAll(
+  '.honrix-inner-header .honrix-search-button',
+)
+search_buttons.forEach(function (button) {
+  button.addEventListener('click', function () {
+    var search_box = document.querySelector('.honrix-search-box')
+    search_box.classList.add('search-box-dispaly')
+  })
+  button.addEventListener('keyup', function (e) {
+    if (e.key === 'Enter' || e.keyCode === 13) {
+      var search_box = document.querySelector('.honrix-search-box')
+      search_box.classList.add('search-box-dispaly')
+    }
+  })
+})
 
-// var search_close = document.querySelector(".honrix-search-box .search-close");
-// search_close.addEventListener("click", function() {
-//     var search_box = document.querySelector(".honrix-search-box");
-//     search_box.classList.remove("search-box-dispaly");
-// });
+var search_close = document.querySelector('.honrix-search-box .search-close')
+search_close.addEventListener('click', function () {
+  var search_box = document.querySelector('.honrix-search-box')
+  search_box.classList.remove('search-box-dispaly')
+})
 
-// search_close.addEventListener("keyup", function(e) {
-//     if (e.key === "Enter" || e.keyCode === 13) {
-//         var search_box = document.querySelector(".honrix-search-box");
-//         search_box.classList.remove("search-box-dispaly");
-//     }
-// });
+search_close.addEventListener('keyup', function (e) {
+  if (e.key === 'Enter' || e.keyCode === 13) {
+    var search_box = document.querySelector('.honrix-search-box')
+    search_box.classList.remove('search-box-dispaly')
+  }
+})
 
-window.addEventListener("scroll", function (ev) {
-  var to_top = document.querySelector(".honrix-to-top-button");
+window.addEventListener('scroll', function (ev) {
+  var to_top = document.querySelector('.honrix-to-top-button')
   if (to_top) {
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
-      document.querySelector(".honrix-to-top-button").style.bottom =
-        document.querySelector(".site-copyright").offsetHeight + "px";
+      document.querySelector('.honrix-to-top-button').style.bottom =
+        document.querySelector('.site-copyright').offsetHeight + 'px'
     } else {
-      document.querySelector(".honrix-to-top-button").style.bottom = "0";
+      document.querySelector('.honrix-to-top-button').style.bottom = '0'
     }
 
     if (window.scrollY >= 400) {
-      document.querySelector(".honrix-to-top-button").style.display = "block";
+      document.querySelector('.honrix-to-top-button').style.display = 'block'
     } else {
-      document.querySelector(".honrix-to-top-button").style.display = "none";
+      document.querySelector('.honrix-to-top-button').style.display = 'none'
     }
   }
-});
+})
 
 jQuery(
-  '<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>'
-).insertAfter(".quantity input");
-jQuery(".quantity").each(function () {
+  '<div class="quantity-nav"><div class="quantity-button quantity-up">+</div><div class="quantity-button quantity-down">-</div></div>',
+).insertAfter('.quantity input')
+jQuery('.quantity').each(function () {
   var spinner = jQuery(this),
     input = spinner.find('input[type="number"]'),
-    btnUp = spinner.find(".quantity-up"),
-    btnDown = spinner.find(".quantity-down"),
-    min = input.attr("min"),
-    max = input.attr("max");
+    btnUp = spinner.find('.quantity-up'),
+    btnDown = spinner.find('.quantity-down'),
+    min = input.attr('min'),
+    max = input.attr('max')
 
   btnUp.click(function () {
-    var oldValue = parseFloat(input.val());
+    var oldValue = parseFloat(input.val())
     if (max) {
       if (oldValue >= max) {
-        var newVal = oldValue;
+        var newVal = oldValue
       } else {
-        var newVal = oldValue + 1;
+        var newVal = oldValue + 1
       }
     } else {
-      var newVal = oldValue + 1;
+      var newVal = oldValue + 1
     }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
+    spinner.find('input').val(newVal)
+    spinner.find('input').trigger('change')
+  })
 
   btnDown.click(function () {
-    var oldValue = parseFloat(input.val());
+    var oldValue = parseFloat(input.val())
     if (oldValue <= min) {
-      var newVal = oldValue;
+      var newVal = oldValue
     } else {
-      var newVal = oldValue - 1;
+      var newVal = oldValue - 1
     }
-    spinner.find("input").val(newVal);
-    spinner.find("input").trigger("change");
-  });
-});
+    spinner.find('input').val(newVal)
+    spinner.find('input').trigger('change')
+  })
+})

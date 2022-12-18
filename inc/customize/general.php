@@ -112,7 +112,7 @@ if (!function_exists('honrix_general_customizer_register')) {
 
         $wp_customize->add_setting(
             'honrix_theme_color',
-            array('default' => '#16bbe1', 'sanitize_callback' => 'sanitize_hex_color')
+            array('default' => '#faab78', 'sanitize_callback' => 'sanitize_hex_color')
         );
 
         $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'honrix_theme_color', array(
@@ -168,7 +168,7 @@ if (!function_exists('honrix_customizer_css')) {
 ?>
         <style type="text/css">
             :root {
-                --honrix-theme-color: <?php echo esc_attr(honrix_get_control_value('honrix_theme_color', '#333333')); ?>;
+                --honrix-theme-color: <?php echo esc_attr(honrix_get_control_value('honrix_theme_color', '#faab78')); ?>;
                 --honrix-title-color: <?php echo esc_attr(honrix_get_control_value('honrix_title_color', '#333333')); ?>;
                 --honrix-text-color: <?php echo esc_attr(honrix_get_control_value('honrix_text_color', '#666666')); ?>;
                 --honrix-background-color: #<?php echo esc_attr(get_background_color()); ?>;
@@ -188,7 +188,7 @@ if (!function_exists('honrix_customizer_css')) {
                 }?>
             }
 
-            .honrix-inner-header .honrix-logo .site-title,
+            
             .honrix-inner-header .honrix-main-menu .navbar-nav li>a:hover,
             .honrix-inner-header .honrix-main-menu .navbar-nav li>a:focus,
             .honrix-inner-header .honrix-main-menu .navbar-nav li>a:active,
@@ -303,7 +303,6 @@ if (!function_exists('honrix_customizer_css')) {
             }
 
             .honrix-inner-header .honrix-main-menu .navbar-nav li>a,
-            .honrix-inner-header .honrix-logo .site-title a:hover,
             .honrix-inner-header .honrix-search-button,
             .honrix-search-box .search-field,
             .honrix-mini-cart-details .product-name a,
@@ -343,9 +342,7 @@ if (!function_exists('honrix_customizer_css')) {
                 background: <?php echo esc_attr(honrix_get_control_value('honrix_title_color', '#333333')); ?>;
             }
 
-            .honrix-search-box {
-                background: <?php echo esc_attr(honrix_get_control_value('honrix_title_color', '#333333')); ?>ee;
-            }
+            
 
             .honrix-sticky-header-show,
             .honrix-mini-cart-details,
@@ -401,7 +398,6 @@ if (!function_exists('honrix_customizer_css')) {
                 color: #<?php echo esc_attr(get_background_color()); ?> !important;
             }
 
-            .honrix-header,
             .honrix-mini-cart-details,
             .honrix-bar::before,
             .woocommerce-mini-cart__total .woocommerce-Price-amount,

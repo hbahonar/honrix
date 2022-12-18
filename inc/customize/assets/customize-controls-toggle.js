@@ -3,26 +3,13 @@
 
     $.bind('ready', function() {
         var item_check = [
-            ['honrix_archive_display_content', ['honrix_archive_content_length', 'honrix_archive_content_excerpt_end'], 'yes'],
-            ['honrix_share_bottuns_archive_display', 'honrix_share_bottuns_archive_place', 'yes'],
-            ['honrix_post_tag_display', 'honrix_post_tag_title', 'yes'],
-            ['honrix_share_bottuns_post_display', ['honrix_share_bottuns_post_place', 'honrix_post_share_title'], 'yes'],
-            ['honrix_post_navigation_display', ['honrix_post_navigation_prev_title', 'honrix_post_navigation_next_title'], 'yes'],
-            ['honrix_archive_content_display_read_more', 'honrix_archive_content_read_more_text', 'yes'],
-            ['honrix_post_related_posts_display', ['honrix_post_related_posts_title', 'honrix_post_related_posts_column', 'honrix_post_related_posts_count', 'honrix_post_related_posts_meta_display'], 'yes'],
-            ['honrix_right_sidebar_display', 'honrix_right_sidebar_width', 'yes'],
-            ['honrix_left_sidebar_display', 'honrix_left_sidebar_width', 'yes'],
-            ['honrix_post_right_sidebar_display', 'honrix_post_right_sidebar_width', 'yes'],
-            ['honrix_post_left_sidebar_display', 'honrix_post_left_sidebar_width', 'yes'],
-            ['honrix_page_right_sidebar_display', 'honrix_page_right_sidebar_width', 'yes'],
-            ['honrix_page_left_sidebar_display', 'honrix_page_left_sidebar_width', 'yes'],
-            ['honrix_shop_right_sidebar_display', 'honrix_shop_right_sidebar_width', 'yes'],
-            ['honrix_shop_left_sidebar_display', 'honrix_shop_left_sidebar_width', 'yes'],
-            ['honrix_product_right_sidebar_display', 'honrix_product_right_sidebar_width', 'yes'],
-            ['honrix_product_left_sidebar_display', 'honrix_product_left_sidebar_width', 'yes'],
-            ['honrix_404_right_sidebar_display', 'honrix_404_right_sidebar_width', 'yes'],
-            ['honrix_404_left_sidebar_display', 'honrix_404_left_sidebar_width', 'yes'],
-            ['honrix_loading_display', 'honrix_loading_gif', 'yes'],
+            ['honrix_header_shadow_display', 'honrix_header_shadow_color', 'yes'],
+            ['honrix_header_sticky', ['honrix_header_sticky_bg_color','honrix_sticky_header_shadow_display','honrix_sticky_header_shadow_color'], 'yes'],
+            ['honrix_sticky_header_shadow_display', 'honrix_sticky_header_shadow_color', 'yes'],
+            ['honrix_mobile_header_shadow_display','honrix_mobile_header_shadow_color','yes'],
+            ['honrix_header_description_display','honrix_header_description_color','yes'],
+            
+            
             ['honrix_archive_mode', 'honrix_archive_thumbnail_ratio', ['grid', 'list']],
             ['honrix_archive_mode', 'honrix_archive_columns', ['grid', 'masonry']]
         ];

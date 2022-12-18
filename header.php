@@ -29,6 +29,6 @@
 
         $header_image_url = header_image();
         ?>
-        <header class='honrix-header <?php echo honrix_get_control_value('honrix_header_sticky', 'yes') == 'yes' ? 'honrix-sticky-header' : ''; ?> w-100 <?php echo esc_attr('theme-' . honrix_get_control_value('honrix_header_theme', '1')); ?>' <?php echo !empty($header_image_url) ? 'style="background-image:url(' . esc_url($header_image_url) . ')"' : ''; ?>>
+        <header class='honrix-header hs-z-10 <?php echo honrix_get_control_value('honrix_header_sticky', 'yes') == 'yes' ? 'honrix-sticky-header' : ''; ?> hs-w-100' <?php echo !empty($header_image_url) ? 'style="background-image:url(' . esc_url($header_image_url) . ')"' : ''; ?>>
             <?php get_template_part('template-parts/header-template/theme'); ?>
         </header>

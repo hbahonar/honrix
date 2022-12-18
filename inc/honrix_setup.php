@@ -54,6 +54,7 @@ if (!function_exists('honrix_setup')) :
         register_nav_menus(
             array(
                 'main-menu' => esc_html__('Main Menu', 'honrix'),
+                'mobile-menu' => esc_html__('Mobile Menu', 'honrix'),
             )
         );
 
