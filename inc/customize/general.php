@@ -189,10 +189,7 @@ if (!function_exists('honrix_customizer_css')) {
             }
 
             
-            .honrix-inner-header .honrix-main-menu .navbar-nav li>a:hover,
-            .honrix-inner-header .honrix-main-menu .navbar-nav li>a:focus,
-            .honrix-inner-header .honrix-main-menu .navbar-nav li>a:active,
-            .honrix-inner-header .honrix-main-menu .navbar-nav .active a,
+            
             .honrix-inner-header .honrix-search-button:hover,
             .honrix-mini-cart-details .mini-cart-header,
             .honrix-mini-cart-details .product-name a:hover,
@@ -302,7 +299,7 @@ if (!function_exists('honrix_customizer_css')) {
                 border-color: <?php echo esc_attr(honrix_get_control_value('honrix_theme_second_color', '#f64c67')); ?>66 !important;
             }
 
-            .honrix-inner-header .honrix-main-menu .navbar-nav li>a,
+            
             .honrix-inner-header .honrix-search-button,
             .honrix-search-box .search-field,
             .honrix-mini-cart-details .product-name a,

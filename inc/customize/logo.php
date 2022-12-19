@@ -48,7 +48,6 @@ if (!function_exists('honrix_header_logo_customizer_register')) {
                 'label' => __('Website Title', 'honrix'),
             ]);
             
-
             $customizer->create_control(
                 [
                     'id' => 'honrix_header_title_color',
@@ -67,8 +66,27 @@ if (!function_exists('honrix_header_logo_customizer_register')) {
                 ],Honrix_Customizer_Control::$COLOR
             );
 
+            $customizer->create_control(array(
+                'id' => 'honrix_header_title_font_size',
+                'default' => '2.2rem',
+                'label' => __('Font Size', 'honrix'),
+            ), Honrix_Customizer_Control::$TEXT);
+
+            $customizer->create_control(array(
+                'id' => 'honrix_header_title_font_weight',
+                'default' => '700',
+                'label' => __('Font Weight', 'honrix'),
+                'options' => array(
+                    '400' => __('400', 'honrix'),
+                    '600' => __('600', 'honrix'),
+                    '700' => __('700', 'honrix'),
+                    '900' => __('900', 'honrix')
+                )
+            ), Honrix_Customizer_Control::$SELECT);
+
             $customizer->end_section('honrix_header_site_title');
 
+            /* description */
             $customizer->start_section([
                 'id' => 'honrix_header_site_description',
                 'label' => __('Website Description', 'honrix'),
@@ -96,6 +114,24 @@ if (!function_exists('honrix_header_logo_customizer_register')) {
                 ],Honrix_Customizer_Control::$COLOR
             );
 
+            $customizer->create_control(array(
+                'id' => 'honrix_header_description_font_size',
+                'default' => '1rem',
+                'label' => __('Font Size', 'honrix'),
+            ), Honrix_Customizer_Control::$TEXT);
+
+            $customizer->create_control(array(
+                'id' => 'honrix_header_description_font_weight',
+                'default' => '400',
+                'label' => __('Font Weight', 'honrix'),
+                'options' => array(
+                    '400' => __('400', 'honrix'),
+                    '600' => __('600', 'honrix'),
+                    '700' => __('700', 'honrix'),
+                    '900' => __('900', 'honrix')
+                )
+            ), Honrix_Customizer_Control::$SELECT);
+
             $customizer->end_section('honrix_header_site_description');
         }
     }
@@ -116,6 +152,8 @@ if (!function_exists('honrix_header_logo_customizer_css')) {
             .honrix-logo .site-title,
             .honrix-logo .site-title a{
                 color: <?php echo esc_attr(honrix_get_control_value('honrix_header_title_color', '#faab78')); ?>;
+                font-size: <?php echo esc_attr(honrix_get_control_value('honrix_header_title_font_size', '2.2rem')); ?>;
+                font-weight: <?php echo  esc_attr(honrix_get_control_value('honrix_header_title_font_weight','700')); ?>;
             }
 
             .honrix-logo .site-title a:hover{
@@ -124,6 +162,8 @@ if (!function_exists('honrix_header_logo_customizer_css')) {
 
             .honrix-logo span{
                 color: <?php echo esc_attr(honrix_get_control_value('honrix_header_description_color', '#666666')); ?>;
+                font-size: <?php echo esc_attr(honrix_get_control_value('honrix_header_description_font_size', '1rem')); ?>;
+                font-weight: <?php echo  esc_attr(honrix_get_control_value('honrix_header_description_font_weight','400')); ?>;
             }
 
             @media (max-width: 767px){
