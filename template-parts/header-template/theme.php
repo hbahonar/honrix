@@ -1,10 +1,10 @@
-<div class="honrix-inner-header hs-flex hs-items-center hs-m-auto <?php echo honrix_get_control_value(
+<div class="honrix-inner-header hs-flex hs-wrap hs-items-center hs-m-auto <?php echo honrix_get_control_value(
     'honrix_header_boxed',
     honrix_get_control_value('honrix_boxed', 'boxed')
 ) == 'boxed'
     ? 'container'
     : 'container-fluid'; ?>">
-        <div class='honrix-logo hs-w-20'>
+        <div class='honrix-logo hs-w-20 hs-m-w-50'>
             <?php if (has_custom_logo()):
                 the_custom_logo();
             else:
@@ -68,7 +68,7 @@
             <?php
             endif; ?>
         </div>
-        <div class='honrix-main-menu hs-w-60'>
+        <div class='honrix-main-menu hs-w-60 hs-m-w-50 hs-m-justify-end'>
             <?php if (wp_is_mobile()): ?>
                 <?php if (has_nav_menu('main-menu')): ?>
                     <nav class="navbar navbar-expand-md">
@@ -104,12 +104,14 @@
             <?php endif; ?>
         </div>
         <div class="honrix-cart-search hs-w-20 hs-flex hs-justify-end">
-            <div class="honrix-search-button" tabindex="0">
-                <i class="fab fa-sistrix"></i>
-            </div>
-            <div class='honrix-search-box' tabindex="-1">
-                <?php get_search_form(); ?>
-            </div>
+            <?php if(honrix_get_control_value('honrix_header_search_box_icon_display','yes')==='yes'): ?>
+                <div class="honrix-search-button" tabindex="0">
+                    <i class="fab fa-sistrix"></i>
+                </div>
+                <div class='honrix-search-box' tabindex="-1">
+                    <?php get_search_form(); ?>
+                </div>
+            <?php endif; ?>
             <?php if (class_exists('WooCommerce')): ?>
                 <div class="honrix-cart">
                     <a href="<?php echo esc_url(

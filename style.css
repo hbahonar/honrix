@@ -446,6 +446,10 @@ template {
   flex-wrap: wrap !important;
 }
 
+.hs-pointer{
+  cursor: pointer;
+}
+
 .hs-justify-end{
   justify-content: end !important;
 }
@@ -456,6 +460,12 @@ template {
 
 .container{
   width: 1170px !important;
+}
+
+@media (max-width: 1170px){
+  .container{
+    width: 100% !important;
+  }
 }
 
 .container-fluid{
@@ -475,6 +485,11 @@ template {
   .hs-flex{
     flex-wrap: wrap;
   }
+
+  .hs-m-justify-end{
+    display: flex;
+    justify-content: end !important;
+  }
 }
 
 /************* Honrix CSS **************/
@@ -488,6 +503,7 @@ template {
 
 *{
   box-sizing: border-box;
+  outline: none;
 }
 
 img{
@@ -618,6 +634,7 @@ img{
   margin-bottom: 5px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  margin-top: 15px;
 }
 
 .hornrix-close-btn .close-line:first-child {

@@ -189,8 +189,6 @@ if (!function_exists('honrix_customizer_css')) {
             }
 
             
-            
-            .honrix-inner-header .honrix-search-button:hover,
             .honrix-mini-cart-details .mini-cart-header,
             .honrix-mini-cart-details .product-name a:hover,
             .honrix-breadcrumbs,
@@ -221,7 +219,6 @@ if (!function_exists('honrix_customizer_css')) {
                 color: <?php echo esc_attr(honrix_get_control_value('honrix_theme_color', '#16bbe1')); ?> !important;
             }
 
-            .honrix-search-box .search-close .close-line,
             .honrix-mini-cart-details .close .close-line,
             .honrix-entries .pagination .nav-links a,
             article .entry-content .page-links .post-page-numbers>span,
@@ -269,7 +266,7 @@ if (!function_exists('honrix_customizer_css')) {
                 color: <?php echo esc_attr(honrix_get_control_value('honrix_theme_second_color', '#f64c67')); ?> !important;
             }
 
-            .honrix-search-box .search-close:hover .close-line,
+            /* .honrix-search-box .search-close:hover .close-line, */
             .honrix-mini-cart-details .close:hover .close-line,
             .honrix-entries .pagination .nav-links span,
             .honrix-entries .pagination .nav-links a:hover,
@@ -299,8 +296,7 @@ if (!function_exists('honrix_customizer_css')) {
                 border-color: <?php echo esc_attr(honrix_get_control_value('honrix_theme_second_color', '#f64c67')); ?>66 !important;
             }
 
-            
-            .honrix-inner-header .honrix-search-button,
+
             .honrix-search-box .search-field,
             .honrix-mini-cart-details .product-name a,
             .honrix-mini-cart-details .woocommerce-Price-amount bdi,
@@ -357,8 +353,8 @@ if (!function_exists('honrix_customizer_css')) {
 
             .honrix-inner-header .honrix-cart .cart-icon svg,
             .honrix-inner-header .honrix-cart a,
-            .honrix-search-box .search-submit,
-            .search-form .search-submit,
+            /* .honrix-search-box .search-submit, */
+            /* .search-form .search-submit, */
             .woocommerce-mini-cart__buttons a:hover,
             .honrix-entries .pagination .nav-links span,
             .honrix-entries .pagination .nav-links a,
@@ -419,8 +415,8 @@ if (!function_exists('honrix_customizer_css')) {
             }
 
             .honrix-inner-header .honrix-cart a,
-            .honrix-search-box .search-submit,
-            .search-form .search-submit,
+            /* .honrix-search-box .search-submit, */
+            /* .search-form .search-submit, */
             .honrix-hover-background::before,
             .honrix-column-hover-background .elementor-column-wrap::before,
             .honrix-button a,
@@ -441,9 +437,9 @@ if (!function_exists('honrix_customizer_css')) {
             }
 
             .honrix-inner-header .honrix-cart a:hover,
-            .honrix-search-box .search-submit:hover,
+            /* .honrix-search-box .search-submit:hover, */
             .honrix-button a:hover,
-            .search-form .search-submit:hover,
+            /* .search-form .search-submit:hover, */
             .woocommerce-mini-cart__buttons a:hover,
             .honrix-entry article .entry-comment .comment-respond .comment-form .submit:hover,
             .woocommerce ul.products li.product .button,

@@ -24,6 +24,7 @@ get_template_part('/inc/customize/typography');
 get_template_part('/inc/customize/header');
 get_template_part('/inc/customize/logo');
 get_template_part('/inc/customize/menu');
+get_template_part('/inc/customize/searchbox');
 get_template_part('/inc/customize/blog');
 get_template_part('/inc/customize/archive');
 get_template_part('/inc/customize/single');
